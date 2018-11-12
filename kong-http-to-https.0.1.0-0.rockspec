@@ -1,5 +1,5 @@
 package = "kong-http-to-https"
-version = "0.1.0"
+version = "0.1.0-0"
 source = {
     url = "https://github.com/ingresse/kong-plugin-http-to-https",
     branch = "master"

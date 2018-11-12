@@ -1,4 +1,4 @@
 # Kong Plugin
 
-### :monkey: :arrows_counterclockwise: Redirect HTTP -> HTTPS
+### 🦍  Redirect HTTP -> HTTPS :arrows_counterclockwise:
 

@@ -1,18 +1,20 @@
 package = "kong-http-to-https"
 version = "0.1.0-1"
+
 source = {
     url = "https://github.com/ingresse/kong-plugin-http-to-https",
     branch = "master"
 }
+
 description = {
     summary = "Kong plugin to redirect HTTP requests to HTTPS",
-    detailed = [[
-      Kong plugin to redirect HTTP requests to HTTPS with 301 status.
-    ]],
     homepage = "https://github.com/ingresse/kong-plugin-http-to-https",
     license = "MIT"
 }
-dependencies = {}
+
+dependencies = {
+}
+
 build = {
     type = "builtin",
     modules = {

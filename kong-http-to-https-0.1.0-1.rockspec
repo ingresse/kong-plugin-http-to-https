@@ -18,7 +18,7 @@ dependencies = {
 build = {
     type = "builtin",
     modules = {
-      ["kong.plugins.http-to-https.handler"] = "src/handler.lua",
-      ["kong.plugins.http-to-https.schema"] = "src/schema.lua",
+      ["kong.plugins.http-to-https.handler"] = "kong/plugins/http-to-https/handler.lua",
+      ["kong.plugins.http-to-https.schema"] = "kong/plugins/http-to-https/schema.lua",
     }
 }

@@ -2,7 +2,7 @@ package = "kong-http-to-https"
 version = "0.1.0-1"
 
 source = {
-    url = "https://github.com/ingresse/kong-plugin-http-to-https",
+    url = "git://github.com/ingresse/kong-plugin-http-to-https",
     branch = "master"
 }
 
@@ -18,7 +18,7 @@ dependencies = {
 build = {
     type = "builtin",
     modules = {
-      ["kong.plugins.http-to-https.handler"] = "kong/plugins/http-to-htps/handler.lua",
-      ["kong.plugins.http-to-https.schema"] = "kong/plugins/http-to-https/schema.lua",
+      ["kong.plugins.http-to-https.handler"] = "src/handler.lua",
+      ["kong.plugins.http-to-https.schema"] = "src/schema.lua",
     }
 }

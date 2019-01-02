@@ -10,7 +10,16 @@ end
 function HttpHandler:access(conf)
   HttpHandler.super.access(self)
 
-  if ngx.var.scheme ~= "https" then
+  local headers = ngx.req.get_headers()
+  local proto
+
+  if headers["x-forwarded-proto"] then
+    proto = headers["x-forwarded-proto"]
+  else
+    proto = ngx.var.scheme
+  end
+
+  if proto ~= "https" then
     local host = ngx.var.host
     local uri = ngx.var.request_uri
 

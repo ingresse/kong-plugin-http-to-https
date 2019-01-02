@@ -10,8 +10,11 @@ end
 function HttpHandler:access(conf)
   HttpHandler.super.access(self)
 
-  if ngx.var.https ~= "on" then
-    return ngx.redirect("https://" .. ngx.var.host .. ngx.var.request_uri, ngx.HTTP_MOVED_PERMANENTLY)
+  if ngx.var.scheme ~= "https" then
+    local host = ngx.var.host
+    local uri = ngx.var.request_uri
+
+    return ngx.redirect("https://" .. host .. uri, ngx.HTTP_MOVED_PERMANENTLY)
   end
 end
 

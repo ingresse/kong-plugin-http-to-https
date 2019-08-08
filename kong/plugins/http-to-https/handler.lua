@@ -1,6 +1,4 @@
-local BasePlugin = require "kong.plugins.base_plugin"
-local responses  = require "kong.tools.responses"
-
+local BasePlugin  = require "kong.plugins.base_plugin"
 local HttpHandler = BasePlugin:extend()
 
 HttpHandler.VERSION  = "1.0.0"

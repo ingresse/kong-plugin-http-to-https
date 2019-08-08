@@ -3,7 +3,7 @@ version = "1.0.0-1"
 
 source = {
     url = "git://github.com/ingresse/kong-plugin-http-to-https",
-    branch = "master"
+    branch = "feature/kong.1.0"
 }
 
 description = {

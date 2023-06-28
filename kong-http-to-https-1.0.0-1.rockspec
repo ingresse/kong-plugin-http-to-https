@@ -2,7 +2,7 @@ package = "kong-http-to-https"
 version = "1.0.0-1"
 
 source = {
-    url = "git://github.com/ingresse/kong-plugin-http-to-https",
+    url = "git@github.com:ingresse/kong-plugin-http-to-https.git",
     tag = "1.1.0"
 }
 
